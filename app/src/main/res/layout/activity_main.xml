@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    tools:context="ittepic.edu.mx.objectanimator.MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:autoLink="web"
+            android:text="http://android-er.blogspot.com/"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/playground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="96dp"
+                android:layout_height="109dp"
+                android:layout_gravity="center"
+                android:src="@drawable/sol1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/bAnticipateInterpolator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AnticipateInterpolator"
+                android:textAllCaps="false" />
+
+
+            <Button
+                android:id="@+id/bBounceInterpolator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BounceInterpolator"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bCycleInterpolator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CycleInterpolator"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bDecelerateInterpolator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DecelerateInterpolator"
+                android:textAllCaps="false" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
